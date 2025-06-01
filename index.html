@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODAPay QR Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="bg-image">
+        <img src="https://wallpaperaccess.com/full/1623272.jpg" />
+    </div>
+    <div class="container">
+    <h1>TODAPay QR Generator</h1>
+    
+    <div class="input-wrapper">
+        <input type="text" id="qrText" placeholder="Enter destination or fare info" />
+        <div id="suggestions"></div>
+    </div>
+    
+    <select id="passengerCount">
+        <option value="1">1 Passenger</option>
+        <option value="2">2 Passengers</option>
+    </select>
+    
+    <button id="generateBtn">Generate QR</button>
+    <div id="qrcode"></div>
+
+    <div id="qr-code"></div>
+    <p id="kiosk-id-display">Kiosk ID: <span id="kiosk-id"></span></p>
+</div>
+
+    <script src="qrcode.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+}
+
+input {
+  padding: 0.5rem;
+  width: 80%;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #00a86b;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem 1rem;
+}
+
+button:hover {
+  background-color: #007f4f;
+}
+
+#qrcode {
+  margin-top: 1rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+#qrText {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+#suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 103%;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 10;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#suggestions div {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+#suggestions div:hover {
+  background-color: #f0f0f0;
+}
+
+.passengerCount {
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-image.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1; /* Push behind the content */
+}
+
+/* Foreground container styles */
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  margin-top: 60px;
+}
